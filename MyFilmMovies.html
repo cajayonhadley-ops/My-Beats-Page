@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Film Movies</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px 50px;
+    background: #f5f7fb;
+    gap: 30px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+header a:link {
+    color: #2a5298;
+}
+
+header a:visited {
+    color: #666;
+}
+
+header a:hover {
+    background: #2a5298;
+    color: white;
+    transform: translateY(-2px);
+}
+
+header a:active {
+    background: #1e3c72;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3c72;
+    font-size: 32px;
+    margin: 40px 0;
+}
+
+.content{
+    padding:40px;
+    text-align:center;
+}
+
+.genre-section{
+    margin-bottom:40px;
+    text-align:left;
+}
+
+.genre-title{
+    color:#2a5298;
+    font-size:1.3em;
+    margin-bottom:15px;
+    padding-bottom:8px;
+    border-bottom:2px solid #2a5298;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.movie-item{
+    background:#f5f7fb;
+    border-radius:12px;
+    padding:15px;
+}
+
+.movie-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.movie-item h3{
+    color:#1e3c72;
+    font-size:1.1em;
+    margin:10px 0 5px 0;
+}
+
+.movie-item p{
+    color:#666;
+    font-size:0.85em;
+    margin:3px 0;
+    line-height: 1.4;
+}
+
+.movie-item .synopsis{
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.video-container{
+    width:100%;
+    margin-top:10px;
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #f5f7fb;
+    color: #666;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #2a5298;
+    color: white;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.back-btn:hover {
+    background: #1e3c72;
+    transform: translateY(-2px);
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+<a href="index.html">Home</a>
+<a href="contacts.html">Contacts</a>
+<a href="Mybeats.html">Mybeats</a>
+<a href="MyFilmMovies.html">My Film Movies</a>
+<a href="MyFilmTvShows.html">My Film TV Shows</a>
+<a href="gallery.html">Gallery</a>
+</header>
+
+<div class="content">
+<h1>My Film Movies</h1>
+
+<div class="genre-section">
+<div class="genre-title">Filipino Romance/Drama</div>
+<div class="grid">
+
+<div class="movie-item">
+<img src="Movies/Images/howsofus.jpg" alt="How's of Us">
+<h3>How's of Us</h3>
+<p><strong>Director:</strong> Cathy Garcia-Sampana</p>
+<p><strong>Stars:</strong> Kathryn Bernardo, Daniel Padilla</p>
+<p class="synopsis">A young couple dreams of growing old together as they deal with the struggles of being in a long-term relationship. They face challenges that test their love and commitment to each other.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/4dnISeJ22Kg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="movie-item">
+<img src="Movies/Images/sevensundays.jpg" alt="Seven Sundays">
+<h3>Seven Sundays</h3>
+<p><strong>Director:</strong> Cathy Garcia-Sampana</p>
+<p><strong>Stars:</strong> Aga Muhlach, Dingdong Dantes, Enrique Gil, Cristine Reyes</p>
+<p class="synopsis">The Bonifacio siblings reunite when they learn that their father has been diagnosed with cancer. In the process, they must deal with their unresolved issues before it's too late.</p>
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/u3614rccaJ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<a href="index.html" class="back-btn">← Back to Home</a><br><br>
+<small><strong>Created by Hadley Cajayon - 2026</strong></small>
+</footer>
+
+</div>
+
+</body>
+</html>
